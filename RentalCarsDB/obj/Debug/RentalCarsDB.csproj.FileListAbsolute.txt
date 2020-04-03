@@ -1,0 +1,12 @@
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\bin\Debug\RentalCarsDB.dll.config
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\bin\Debug\RentalCarsDB.dll
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\bin\Debug\RentalCarsDB.pdb
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\bin\Debug\EntityFramework.dll
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\bin\Debug\EntityFramework.xml
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\obj\Debug\RentalCarsDB.csprojAssemblyReference.cache
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\obj\Debug\RentalCarsDB.csproj.CoreCompileInputs.cache
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\obj\Debug\RentalCarsDB.csproj.CopyComplete
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\obj\Debug\RentalCarsDB.dll
+C:\Users\Bobo\Desktop\RentalCars\RentalCarsDB\obj\Debug\RentalCarsDB.pdb
