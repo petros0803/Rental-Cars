@@ -11,8 +11,7 @@ namespace RentalCarsDB.Models
     [Table("People")]
     public class Person
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
         public Guid PersonId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

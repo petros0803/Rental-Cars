@@ -12,8 +12,7 @@ namespace RentalCarsDB.Models
     [Table("Cars")]
     public class Car
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
         public Guid CarId { get; set; }
         public bool Rented { get; set; }
         public string CarModel { get; set; }
