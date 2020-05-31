@@ -12,6 +12,10 @@ namespace RentalCarsDB.Models
     [Table("Cars")]
     public class Car
     {
+        protected Car()
+        {
+
+        }
 
         public Guid CarId { get; set; }
         public bool Rented { get; set; }
@@ -23,9 +27,20 @@ namespace RentalCarsDB.Models
         public DateTime FirstRegistrationDate { get; set; }
         public virtual Person Person { get; set; }
 
-        protected Car()
+        public static Car Create(string carModel, string carPlate, double engineSize, DateTime firstRegistrationDate, FuelType fuelType, DateTime manufactoreDate)
         {
-            
+            return new Car()
+            {
+                CarId = Guid.NewGuid(),
+                CarModel = carModel,
+                CarPlate = carPlate,
+                EngineSize = engineSize,
+                FirstRegistrationDate = firstRegistrationDate,
+                FuelType = fuelType,
+                ManufactoreDate = manufactoreDate,
+                Person = null,
+                Rented = false
+            };
         }
     }
 }

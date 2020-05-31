@@ -1,4 +1,5 @@
 ﻿using RentalCarsDB;
+using RentalCarsDB.Enums;
 using RentalCarsDB.Models;
 using System;
 using System.Collections.Generic;
@@ -9,24 +10,27 @@ using System.Threading.Tasks;
 namespace TestRentalCars
 {
     class Program
-    { 
-        static void Main(string[] args)
+    {
+        static async Task Main(string[] args)
         {
-            using (RentalCarsContext context = new RentalCarsContext())
+            var adminUser = await RentalCarsAPI.GetUserByUsernameAsync("admin");
+            if (await RentalCarsAPI.GetUserByUsernameAsync("admin") == null)
             {
-                //context.Users.Add(User.Create("admin", "admin"));
+                await RentalCarsAPI.SaveUserAsync(User.Create("admin", "admin"));
+            }
+            else
+            {
+                Console.WriteLine("{0}, {1}", adminUser.Username, adminUser.Password);
+            }
 
-                User user = context.Users.Where(u => u.Username == "admin").FirstOrDefault();
-                context.Users.Remove(user);
+            Car mertzan = Car.Create("Mercedes", "12731273121", 6.2, DateTime.Now, FuelType.Diesel, DateTime.Now);
 
-                context.SaveChanges();
-                foreach(var x in context.Users)
-                {
-                    Console.WriteLine(x.Username);
-                }
-            }   
+            if (!await RentalCarsAPI.CarAlreadyExist(mertzan))
+                await RentalCarsAPI.SaveCarAsync(mertzan);
+
+            var cars = await RentalCarsAPI.GetCarsAsync();
+
+            await RentalCarsAPI.RentToPersonAsync(cars[0].CarId, Person.Create("TEST1", "TEST2", DateTime.Now, DateTime.Now.AddDays(1), "TEST3"));
         }
-        
     }
-
 }

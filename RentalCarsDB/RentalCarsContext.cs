@@ -15,12 +15,15 @@ namespace RentalCarsDB
         public DbSet<User> Users { get; set; }
 
         public RentalCarsContext() : base("name=RentalCarsContext")
-        { }
+        {
+            Database.CreateIfNotExists();
+        }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Car>().HasOptional(c => c.Person).WithRequired(p => p.Car);
+            modelBuilder.Entity<Car>()
+               .HasOptional(s => s.Person)
+               .WithRequired(p => p.Car);
         }
     }
 }
