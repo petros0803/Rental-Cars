@@ -72,5 +72,23 @@ namespace RentalCarsDB
                 return await context.People.Where(p => p.Car == car).FirstOrDefaultAsync();
             }
         }
+
+        public static async Task<Car> GetCarById(Guid carId)
+        {
+            using (var context = new RentalCarsContext())
+            {
+                return await context.Cars.Where(c => c.CarId == carId).FirstOrDefaultAsync();
+            }
+        }
+
+        public static async Task<bool> LogInAsync(User user)
+        {
+            using (var context = new RentalCarsContext())
+            {
+                var userFromDB = await context.Users.Where(u => u.Username == user.Username 
+                && u.Password == user.Password).FirstOrDefaultAsync();
+                return userFromDB != null;
+            }
+        }
     }
 }

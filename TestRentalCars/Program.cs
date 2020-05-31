@@ -23,10 +23,13 @@ namespace TestRentalCars
                 Console.WriteLine("{0}, {1}", adminUser.Username, adminUser.Password);
             }
 
-            Car mertzan = Car.Create("Mercedes", "12731273121", 6.2, DateTime.Now, FuelType.Diesel, DateTime.Now);
+            Car mercedes = Car.Create("Mercedes", "111111111", 6.2, DateTime.Now, FuelType.Diesel, DateTime.Now);
+            Car bmw = Car.Create("BMW", "222222222", 5.2, DateTime.Now, FuelType.Diesel, DateTime.Now);
 
-            if (!await RentalCarsAPI.CarAlreadyExist(mertzan))
-                await RentalCarsAPI.SaveCarAsync(mertzan);
+            if (!await RentalCarsAPI.CarAlreadyExist(mercedes))
+                await RentalCarsAPI.SaveCarAsync(mercedes);
+            if (!await RentalCarsAPI.CarAlreadyExist(bmw))
+                await RentalCarsAPI.SaveCarAsync(bmw);
 
             var cars = await RentalCarsAPI.GetCarsAsync();
 
