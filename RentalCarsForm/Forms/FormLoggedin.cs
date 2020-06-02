@@ -76,7 +76,6 @@ namespace RentalCarsForm.Forms
                 int selectedrowindex = dataGridView.SelectedCells[0].RowIndex;
                 DataGridViewRow selectedRow = dataGridView.Rows[selectedrowindex];
                 string a = Convert.ToString(selectedRow.Cells["CarID"].Value);
-                Console.WriteLine(a);
                 this.mainForm.OpenChildForm(new FormSelectedCar(mainForm, a, username));
             }
             else

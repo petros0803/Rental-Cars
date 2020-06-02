@@ -19,3 +19,4 @@ C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\obj\Debug\RentalCarsFo
 C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\obj\Debug\RentalCarsForm.Forms.FormSelectedCar.resources
+C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\obj\Debug\RentalCarsForm.Forms.FormRentCar.resources

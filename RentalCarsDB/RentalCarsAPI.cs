@@ -64,12 +64,28 @@ namespace RentalCarsDB
             }
         }
 
+        public static async Task FreeCar(Guid carId)
+        {
+            using (var context = new RentalCarsContext())
+            {
+                var result = context.Cars.Where(c => c.CarId == carId).FirstOrDefault();
+                var person = context.People.Where(p => p.PersonId == carId).FirstOrDefault();
+                if (result != null)
+                {
+                    result.Person = null;
+                    result.Rented = false;
+                    context.People.Remove(person);
+                    await context.SaveChangesAsync();
+                }
+            }
+        }
+
         public static async Task<Person> GetPersonByCardId(Guid carId)
         {
             using (var context = new RentalCarsContext())
             {
                 var car = await context.Cars.Where(c => c.CarId == carId).FirstOrDefaultAsync();
-                return await context.People.Where(p => p.Car == car).FirstOrDefaultAsync();
+                return await context.People.Where(p => p.PersonId == carId).FirstOrDefaultAsync();
             }
         }
 

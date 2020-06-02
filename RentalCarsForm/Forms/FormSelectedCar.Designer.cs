@@ -45,6 +45,9 @@
             this.labelFirstRegistrationDate = new System.Windows.Forms.Label();
             this.labelCarPlate = new System.Windows.Forms.Label();
             this.labelRented = new System.Windows.Forms.Label();
+            this.labelRentedDate = new System.Windows.Forms.Label();
+            this.labelRentedUntil = new System.Windows.Forms.Label();
+            this.buttonRent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelModel
@@ -233,11 +236,47 @@
             this.labelRented.TabIndex = 42;
             this.labelRented.Text = "Model";
             // 
+            // labelRentedDate
+            // 
+            this.labelRentedDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelRentedDate.AutoSize = true;
+            this.labelRentedDate.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRentedDate.Location = new System.Drawing.Point(89, 350);
+            this.labelRentedDate.Name = "labelRentedDate";
+            this.labelRentedDate.Size = new System.Drawing.Size(277, 31);
+            this.labelRentedDate.TabIndex = 43;
+            this.labelRentedDate.Text = "Inchiriat pana la data de";
+            // 
+            // labelRentedUntil
+            // 
+            this.labelRentedUntil.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelRentedUntil.AutoSize = true;
+            this.labelRentedUntil.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRentedUntil.Location = new System.Drawing.Point(492, 350);
+            this.labelRentedUntil.Name = "labelRentedUntil";
+            this.labelRentedUntil.Size = new System.Drawing.Size(86, 31);
+            this.labelRentedUntil.TabIndex = 44;
+            this.labelRentedUntil.Text = "Model";
+            // 
+            // buttonRent
+            // 
+            this.buttonRent.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonRent.Location = new System.Drawing.Point(316, 400);
+            this.buttonRent.Name = "buttonRent";
+            this.buttonRent.Size = new System.Drawing.Size(75, 23);
+            this.buttonRent.TabIndex = 45;
+            this.buttonRent.Text = "Back";
+            this.buttonRent.UseVisualStyleBackColor = true;
+            this.buttonRent.Click += new System.EventHandler(this.ButtonBack_Click);
+            // 
             // FormSelectedCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonRent);
+            this.Controls.Add(this.labelRentedUntil);
+            this.Controls.Add(this.labelRentedDate);
             this.Controls.Add(this.labelRented);
             this.Controls.Add(this.labelManufactureDate);
             this.Controls.Add(this.labelFirstRegistrationDate);
@@ -281,5 +320,8 @@
         private System.Windows.Forms.Label labelFirstRegistrationDate;
         private System.Windows.Forms.Label labelCarPlate;
         private System.Windows.Forms.Label labelRented;
+        private System.Windows.Forms.Label labelRentedDate;
+        private System.Windows.Forms.Label labelRentedUntil;
+        private System.Windows.Forms.Button buttonRent;
     }
 }
