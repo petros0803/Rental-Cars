@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.comboBoxCarModel = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.labelRentalCars = new System.Windows.Forms.Label();
             this.buttonLogOut = new System.Windows.Forms.Button();
@@ -42,22 +41,15 @@
             // 
             this.comboBoxCarModel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxCarModel.FormattingEnabled = true;
-            this.comboBoxCarModel.Location = new System.Drawing.Point(396, 78);
+            this.comboBoxCarModel.Location = new System.Drawing.Point(305, 78);
             this.comboBoxCarModel.Name = "comboBoxCarModel";
             this.comboBoxCarModel.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCarModel.TabIndex = 17;
             // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(170, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 20);
-            this.textBox1.TabIndex = 14;
-            // 
             // dataGridView
             // 
             this.dataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(18, 105);
             this.dataGridView.MultiSelect = false;
@@ -81,23 +73,25 @@
             // buttonLogOut
             // 
             this.buttonLogOut.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonLogOut.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonLogOut.Location = new System.Drawing.Point(697, 17);
             this.buttonLogOut.Name = "buttonLogOut";
             this.buttonLogOut.Size = new System.Drawing.Size(75, 23);
             this.buttonLogOut.TabIndex = 22;
             this.buttonLogOut.Text = "Log out";
-            this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.buttonLogOut.UseVisualStyleBackColor = false;
             this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // buttonSearch
             // 
             this.buttonSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonSearch.Location = new System.Drawing.Point(523, 77);
+            this.buttonSearch.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonSearch.Location = new System.Drawing.Point(432, 77);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(75, 21);
             this.buttonSearch.TabIndex = 23;
             this.buttonSearch.Text = "Search";
-            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.UseVisualStyleBackColor = false;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // labelUsername
@@ -114,13 +108,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.labelRentalCars);
             this.Controls.Add(this.comboBoxCarModel);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView);
             this.Name = "FormLoggedin";
             this.Text = "FormLoggedin";
@@ -133,7 +127,6 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBoxCarModel;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Label labelRentalCars;
         private System.Windows.Forms.Button buttonLogOut;

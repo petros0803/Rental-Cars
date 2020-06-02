@@ -78,7 +78,7 @@ namespace RentalCarsForm.Forms
             if (car.Rented == true)
             {
                 await RentalCarsAPI.FreeCar(car.CarId);
-
+                this.mainForm.OpenChildForm(new FormSelectedCar(mainForm, carID, username));
             }
             else
             {

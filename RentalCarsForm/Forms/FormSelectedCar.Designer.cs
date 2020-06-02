@@ -55,7 +55,7 @@
             this.labelModel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelModel.AutoSize = true;
             this.labelModel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelModel.Location = new System.Drawing.Point(89, 133);
+            this.labelModel.Location = new System.Drawing.Point(74, 188);
             this.labelModel.Name = "labelModel";
             this.labelModel.Size = new System.Drawing.Size(86, 31);
             this.labelModel.TabIndex = 21;
@@ -64,12 +64,13 @@
             // buttonBack
             // 
             this.buttonBack.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonBack.Location = new System.Drawing.Point(29, 54);
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonBack.Location = new System.Drawing.Point(31, 67);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 23;
             this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // labelRentalCars
@@ -77,7 +78,7 @@
             this.labelRentalCars.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelRentalCars.AutoSize = true;
             this.labelRentalCars.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRentalCars.Location = new System.Drawing.Point(23, 9);
+            this.labelRentalCars.Location = new System.Drawing.Point(25, 22);
             this.labelRentalCars.Name = "labelRentalCars";
             this.labelRentalCars.Size = new System.Drawing.Size(287, 31);
             this.labelRentalCars.TabIndex = 25;
@@ -88,7 +89,7 @@
             this.labelUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelUsername.AutoSize = true;
             this.labelUsername.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(310, 9);
+            this.labelUsername.Location = new System.Drawing.Point(312, 22);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(0, 31);
             this.labelUsername.TabIndex = 26;
@@ -98,7 +99,7 @@
             this.labelPlate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelPlate.AutoSize = true;
             this.labelPlate.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPlate.Location = new System.Drawing.Point(89, 226);
+            this.labelPlate.Location = new System.Drawing.Point(74, 281);
             this.labelPlate.Name = "labelPlate";
             this.labelPlate.Size = new System.Drawing.Size(272, 31);
             this.labelPlate.TabIndex = 27;
@@ -109,7 +110,7 @@
             this.labelManufacture.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelManufacture.AutoSize = true;
             this.labelManufacture.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelManufacture.Location = new System.Drawing.Point(89, 288);
+            this.labelManufacture.Location = new System.Drawing.Point(74, 343);
             this.labelManufacture.Name = "labelManufacture";
             this.labelManufacture.Size = new System.Drawing.Size(206, 31);
             this.labelManufacture.TabIndex = 28;
@@ -120,7 +121,7 @@
             this.labelFirst.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelFirst.AutoSize = true;
             this.labelFirst.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFirst.Location = new System.Drawing.Point(89, 257);
+            this.labelFirst.Location = new System.Drawing.Point(74, 312);
             this.labelFirst.Name = "labelFirst";
             this.labelFirst.Size = new System.Drawing.Size(228, 31);
             this.labelFirst.TabIndex = 29;
@@ -131,7 +132,7 @@
             this.labelFuel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelFuel.AutoSize = true;
             this.labelFuel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFuel.Location = new System.Drawing.Point(89, 164);
+            this.labelFuel.Location = new System.Drawing.Point(74, 219);
             this.labelFuel.Name = "labelFuel";
             this.labelFuel.Size = new System.Drawing.Size(148, 31);
             this.labelFuel.TabIndex = 30;
@@ -142,7 +143,7 @@
             this.labelEngine.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEngine.AutoSize = true;
             this.labelEngine.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEngine.Location = new System.Drawing.Point(89, 195);
+            this.labelEngine.Location = new System.Drawing.Point(74, 250);
             this.labelEngine.Name = "labelEngine";
             this.labelEngine.Size = new System.Drawing.Size(201, 31);
             this.labelEngine.TabIndex = 31;
@@ -153,7 +154,7 @@
             this.labelRent.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelRent.AutoSize = true;
             this.labelRent.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRent.Location = new System.Drawing.Point(89, 319);
+            this.labelRent.Location = new System.Drawing.Point(74, 374);
             this.labelRent.Name = "labelRent";
             this.labelRent.Size = new System.Drawing.Size(105, 31);
             this.labelRent.TabIndex = 32;
@@ -164,7 +165,7 @@
             this.labelCarModel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCarModel.AutoSize = true;
             this.labelCarModel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCarModel.Location = new System.Drawing.Point(492, 133);
+            this.labelCarModel.Location = new System.Drawing.Point(477, 188);
             this.labelCarModel.Name = "labelCarModel";
             this.labelCarModel.Size = new System.Drawing.Size(86, 31);
             this.labelCarModel.TabIndex = 36;
@@ -175,7 +176,7 @@
             this.labelFuelType.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelFuelType.AutoSize = true;
             this.labelFuelType.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFuelType.Location = new System.Drawing.Point(492, 164);
+            this.labelFuelType.Location = new System.Drawing.Point(477, 219);
             this.labelFuelType.Name = "labelFuelType";
             this.labelFuelType.Size = new System.Drawing.Size(86, 31);
             this.labelFuelType.TabIndex = 37;
@@ -186,7 +187,7 @@
             this.labelEngineSize.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEngineSize.AutoSize = true;
             this.labelEngineSize.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEngineSize.Location = new System.Drawing.Point(492, 195);
+            this.labelEngineSize.Location = new System.Drawing.Point(477, 250);
             this.labelEngineSize.Name = "labelEngineSize";
             this.labelEngineSize.Size = new System.Drawing.Size(86, 31);
             this.labelEngineSize.TabIndex = 38;
@@ -197,7 +198,7 @@
             this.labelManufactureDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelManufactureDate.AutoSize = true;
             this.labelManufactureDate.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelManufactureDate.Location = new System.Drawing.Point(492, 288);
+            this.labelManufactureDate.Location = new System.Drawing.Point(477, 343);
             this.labelManufactureDate.Name = "labelManufactureDate";
             this.labelManufactureDate.Size = new System.Drawing.Size(86, 31);
             this.labelManufactureDate.TabIndex = 41;
@@ -208,7 +209,7 @@
             this.labelFirstRegistrationDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelFirstRegistrationDate.AutoSize = true;
             this.labelFirstRegistrationDate.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFirstRegistrationDate.Location = new System.Drawing.Point(492, 257);
+            this.labelFirstRegistrationDate.Location = new System.Drawing.Point(477, 312);
             this.labelFirstRegistrationDate.Name = "labelFirstRegistrationDate";
             this.labelFirstRegistrationDate.Size = new System.Drawing.Size(86, 31);
             this.labelFirstRegistrationDate.TabIndex = 40;
@@ -219,7 +220,7 @@
             this.labelCarPlate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCarPlate.AutoSize = true;
             this.labelCarPlate.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCarPlate.Location = new System.Drawing.Point(492, 226);
+            this.labelCarPlate.Location = new System.Drawing.Point(477, 281);
             this.labelCarPlate.Name = "labelCarPlate";
             this.labelCarPlate.Size = new System.Drawing.Size(86, 31);
             this.labelCarPlate.TabIndex = 39;
@@ -230,7 +231,7 @@
             this.labelRented.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelRented.AutoSize = true;
             this.labelRented.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRented.Location = new System.Drawing.Point(492, 319);
+            this.labelRented.Location = new System.Drawing.Point(477, 374);
             this.labelRented.Name = "labelRented";
             this.labelRented.Size = new System.Drawing.Size(86, 31);
             this.labelRented.TabIndex = 42;
@@ -241,7 +242,7 @@
             this.labelRentedDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelRentedDate.AutoSize = true;
             this.labelRentedDate.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRentedDate.Location = new System.Drawing.Point(89, 350);
+            this.labelRentedDate.Location = new System.Drawing.Point(74, 405);
             this.labelRentedDate.Name = "labelRentedDate";
             this.labelRentedDate.Size = new System.Drawing.Size(277, 31);
             this.labelRentedDate.TabIndex = 43;
@@ -252,7 +253,7 @@
             this.labelRentedUntil.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelRentedUntil.AutoSize = true;
             this.labelRentedUntil.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRentedUntil.Location = new System.Drawing.Point(492, 350);
+            this.labelRentedUntil.Location = new System.Drawing.Point(477, 405);
             this.labelRentedUntil.Name = "labelRentedUntil";
             this.labelRentedUntil.Size = new System.Drawing.Size(86, 31);
             this.labelRentedUntil.TabIndex = 44;
@@ -261,19 +262,21 @@
             // buttonRent
             // 
             this.buttonRent.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonRent.Location = new System.Drawing.Point(316, 400);
+            this.buttonRent.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonRent.Location = new System.Drawing.Point(308, 459);
             this.buttonRent.Name = "buttonRent";
-            this.buttonRent.Size = new System.Drawing.Size(75, 23);
+            this.buttonRent.Size = new System.Drawing.Size(105, 32);
             this.buttonRent.TabIndex = 45;
             this.buttonRent.Text = "Back";
-            this.buttonRent.UseVisualStyleBackColor = true;
+            this.buttonRent.UseVisualStyleBackColor = false;
             this.buttonRent.Click += new System.EventHandler(this.ButtonBack_Click);
             // 
             // FormSelectedCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.buttonRent);
             this.Controls.Add(this.labelRentedUntil);
             this.Controls.Add(this.labelRentedDate);

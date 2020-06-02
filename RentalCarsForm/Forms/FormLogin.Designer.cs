@@ -77,12 +77,13 @@
             // buttonLogin
             // 
             this.buttonLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonLogin.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonLogin.Location = new System.Drawing.Point(145, 263);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonLogin.TabIndex = 15;
             this.buttonLogin.Text = "Log in";
-            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.ButtonLogin_ClickAsync);
             // 
             // labelRentalCars
@@ -119,6 +120,7 @@
             // FormLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(384, 361);
             this.Controls.Add(this.labelFailLogIn);
             this.Controls.Add(this.labelLogIn);

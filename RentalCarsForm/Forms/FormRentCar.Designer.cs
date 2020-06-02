@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelEngine = new System.Windows.Forms.Label();
-            this.labelFuel = new System.Windows.Forms.Label();
-            this.labelModel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelBegin = new System.Windows.Forms.Label();
+            this.labelFirstName = new System.Windows.Forms.Label();
+            this.labelLastName = new System.Windows.Forms.Label();
+            this.labelFinal = new System.Windows.Forms.Label();
+            this.labelCNP = new System.Windows.Forms.Label();
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.textBoxCNP = new System.Windows.Forms.TextBox();
@@ -42,65 +42,65 @@
             this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // labelEngine
+            // labelBegin
             // 
-            this.labelEngine.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelEngine.AutoSize = true;
-            this.labelEngine.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEngine.Location = new System.Drawing.Point(202, 250);
-            this.labelEngine.Name = "labelEngine";
-            this.labelEngine.Size = new System.Drawing.Size(153, 31);
-            this.labelEngine.TabIndex = 41;
-            this.labelEngine.Text = "Data inceput";
+            this.labelBegin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelBegin.AutoSize = true;
+            this.labelBegin.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBegin.Location = new System.Drawing.Point(180, 250);
+            this.labelBegin.Name = "labelBegin";
+            this.labelBegin.Size = new System.Drawing.Size(153, 31);
+            this.labelBegin.TabIndex = 41;
+            this.labelBegin.Text = "Data inceput";
             // 
-            // labelFuel
+            // labelFirstName
             // 
-            this.labelFuel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelFuel.AutoSize = true;
-            this.labelFuel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFuel.Location = new System.Drawing.Point(202, 188);
-            this.labelFuel.Name = "labelFuel";
-            this.labelFuel.Size = new System.Drawing.Size(110, 31);
-            this.labelFuel.TabIndex = 40;
-            this.labelFuel.Text = "Prenume";
+            this.labelFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelFirstName.AutoSize = true;
+            this.labelFirstName.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFirstName.Location = new System.Drawing.Point(180, 188);
+            this.labelFirstName.Name = "labelFirstName";
+            this.labelFirstName.Size = new System.Drawing.Size(110, 31);
+            this.labelFirstName.TabIndex = 40;
+            this.labelFirstName.Text = "Prenume";
             // 
-            // labelModel
+            // labelLastName
             // 
-            this.labelModel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelModel.AutoSize = true;
-            this.labelModel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelModel.Location = new System.Drawing.Point(202, 157);
-            this.labelModel.Name = "labelModel";
-            this.labelModel.Size = new System.Drawing.Size(79, 31);
-            this.labelModel.TabIndex = 39;
-            this.labelModel.Text = "Nume";
+            this.labelLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelLastName.AutoSize = true;
+            this.labelLastName.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLastName.Location = new System.Drawing.Point(180, 156);
+            this.labelLastName.Name = "labelLastName";
+            this.labelLastName.Size = new System.Drawing.Size(79, 31);
+            this.labelLastName.TabIndex = 39;
+            this.labelLastName.Text = "Nume";
             // 
-            // label1
+            // labelFinal
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(202, 281);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 31);
-            this.label1.TabIndex = 45;
-            this.label1.Text = "Data final";
+            this.labelFinal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelFinal.AutoSize = true;
+            this.labelFinal.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFinal.Location = new System.Drawing.Point(180, 281);
+            this.labelFinal.Name = "labelFinal";
+            this.labelFinal.Size = new System.Drawing.Size(121, 31);
+            this.labelFinal.TabIndex = 45;
+            this.labelFinal.Text = "Data final";
             // 
-            // label2
+            // labelCNP
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(202, 219);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 31);
-            this.label2.TabIndex = 46;
-            this.label2.Text = "CNP";
+            this.labelCNP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelCNP.AutoSize = true;
+            this.labelCNP.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCNP.Location = new System.Drawing.Point(180, 219);
+            this.labelCNP.Name = "labelCNP";
+            this.labelCNP.Size = new System.Drawing.Size(66, 31);
+            this.labelCNP.TabIndex = 46;
+            this.labelCNP.Text = "CNP";
             // 
             // textBoxLastName
             // 
             this.textBoxLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxLastName.Location = new System.Drawing.Point(406, 167);
+            this.textBoxLastName.Location = new System.Drawing.Point(384, 167);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(187, 20);
             this.textBoxLastName.TabIndex = 47;
@@ -109,7 +109,7 @@
             // textBoxFirstName
             // 
             this.textBoxFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxFirstName.Location = new System.Drawing.Point(406, 199);
+            this.textBoxFirstName.Location = new System.Drawing.Point(384, 199);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(187, 20);
             this.textBoxFirstName.TabIndex = 48;
@@ -117,7 +117,7 @@
             // textBoxCNP
             // 
             this.textBoxCNP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxCNP.Location = new System.Drawing.Point(406, 230);
+            this.textBoxCNP.Location = new System.Drawing.Point(384, 230);
             this.textBoxCNP.Name = "textBoxCNP";
             this.textBoxCNP.Size = new System.Drawing.Size(187, 20);
             this.textBoxCNP.TabIndex = 49;
@@ -125,7 +125,7 @@
             // dateTimePickerBegin
             // 
             this.dateTimePickerBegin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerBegin.Location = new System.Drawing.Point(406, 261);
+            this.dateTimePickerBegin.Location = new System.Drawing.Point(384, 261);
             this.dateTimePickerBegin.Name = "dateTimePickerBegin";
             this.dateTimePickerBegin.Size = new System.Drawing.Size(187, 20);
             this.dateTimePickerBegin.TabIndex = 50;
@@ -133,7 +133,7 @@
             // dateTimePickerFinal
             // 
             this.dateTimePickerFinal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerFinal.Location = new System.Drawing.Point(406, 292);
+            this.dateTimePickerFinal.Location = new System.Drawing.Point(384, 292);
             this.dateTimePickerFinal.Name = "dateTimePickerFinal";
             this.dateTimePickerFinal.Size = new System.Drawing.Size(187, 20);
             this.dateTimePickerFinal.TabIndex = 51;
@@ -141,29 +141,32 @@
             // buttonRent
             // 
             this.buttonRent.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonRent.Location = new System.Drawing.Point(406, 358);
+            this.buttonRent.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonRent.Location = new System.Drawing.Point(384, 358);
             this.buttonRent.Name = "buttonRent";
             this.buttonRent.Size = new System.Drawing.Size(113, 31);
             this.buttonRent.TabIndex = 52;
             this.buttonRent.Text = "Rent";
-            this.buttonRent.UseVisualStyleBackColor = true;
+            this.buttonRent.UseVisualStyleBackColor = false;
             this.buttonRent.Click += new System.EventHandler(this.buttonRent_Click);
             // 
             // buttonBack
             // 
             this.buttonBack.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonBack.Location = new System.Drawing.Point(242, 358);
+            this.buttonBack.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonBack.Location = new System.Drawing.Point(220, 358);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(113, 31);
             this.buttonBack.TabIndex = 53;
             this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // FormRentCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonRent);
@@ -172,11 +175,11 @@
             this.Controls.Add(this.textBoxCNP);
             this.Controls.Add(this.textBoxFirstName);
             this.Controls.Add(this.textBoxLastName);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelEngine);
-            this.Controls.Add(this.labelFuel);
-            this.Controls.Add(this.labelModel);
+            this.Controls.Add(this.labelCNP);
+            this.Controls.Add(this.labelFinal);
+            this.Controls.Add(this.labelBegin);
+            this.Controls.Add(this.labelFirstName);
+            this.Controls.Add(this.labelLastName);
             this.Name = "FormRentCar";
             this.Text = "FormRentCar";
             this.ResumeLayout(false);
@@ -186,11 +189,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label labelEngine;
-        private System.Windows.Forms.Label labelFuel;
-        private System.Windows.Forms.Label labelModel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelBegin;
+        private System.Windows.Forms.Label labelFirstName;
+        private System.Windows.Forms.Label labelLastName;
+        private System.Windows.Forms.Label labelFinal;
+        private System.Windows.Forms.Label labelCNP;
         private System.Windows.Forms.TextBox textBoxLastName;
         private System.Windows.Forms.TextBox textBoxFirstName;
         private System.Windows.Forms.TextBox textBoxCNP;
