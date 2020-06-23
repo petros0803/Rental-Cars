@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRentCar));
             this.labelBegin = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.labelLastName = new System.Windows.Forms.Label();
@@ -40,16 +41,20 @@
             this.dateTimePickerFinal = new System.Windows.Forms.DateTimePicker();
             this.buttonRent = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelBegin
             // 
             this.labelBegin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelBegin.AutoSize = true;
-            this.labelBegin.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBegin.Location = new System.Drawing.Point(180, 250);
+            this.labelBegin.BackColor = System.Drawing.Color.Transparent;
+            this.labelBegin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBegin.ForeColor = System.Drawing.Color.White;
+            this.labelBegin.Location = new System.Drawing.Point(203, 313);
             this.labelBegin.Name = "labelBegin";
-            this.labelBegin.Size = new System.Drawing.Size(153, 31);
+            this.labelBegin.Size = new System.Drawing.Size(83, 16);
             this.labelBegin.TabIndex = 41;
             this.labelBegin.Text = "Data inceput";
             // 
@@ -57,10 +62,12 @@
             // 
             this.labelFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFirstName.Location = new System.Drawing.Point(180, 188);
+            this.labelFirstName.BackColor = System.Drawing.Color.Transparent;
+            this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFirstName.ForeColor = System.Drawing.Color.White;
+            this.labelFirstName.Location = new System.Drawing.Point(203, 229);
             this.labelFirstName.Name = "labelFirstName";
-            this.labelFirstName.Size = new System.Drawing.Size(110, 31);
+            this.labelFirstName.Size = new System.Drawing.Size(62, 16);
             this.labelFirstName.TabIndex = 40;
             this.labelFirstName.Text = "Prenume";
             // 
@@ -68,10 +75,12 @@
             // 
             this.labelLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLastName.Location = new System.Drawing.Point(180, 156);
+            this.labelLastName.BackColor = System.Drawing.Color.Transparent;
+            this.labelLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLastName.ForeColor = System.Drawing.Color.White;
+            this.labelLastName.Location = new System.Drawing.Point(203, 187);
             this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(79, 31);
+            this.labelLastName.Size = new System.Drawing.Size(44, 16);
             this.labelLastName.TabIndex = 39;
             this.labelLastName.Text = "Nume";
             // 
@@ -79,10 +88,12 @@
             // 
             this.labelFinal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelFinal.AutoSize = true;
-            this.labelFinal.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFinal.Location = new System.Drawing.Point(180, 281);
+            this.labelFinal.BackColor = System.Drawing.Color.Transparent;
+            this.labelFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFinal.ForeColor = System.Drawing.Color.White;
+            this.labelFinal.Location = new System.Drawing.Point(203, 355);
             this.labelFinal.Name = "labelFinal";
-            this.labelFinal.Size = new System.Drawing.Size(121, 31);
+            this.labelFinal.Size = new System.Drawing.Size(64, 16);
             this.labelFinal.TabIndex = 45;
             this.labelFinal.Text = "Data final";
             // 
@@ -90,17 +101,20 @@
             // 
             this.labelCNP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCNP.AutoSize = true;
-            this.labelCNP.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCNP.Location = new System.Drawing.Point(180, 219);
+            this.labelCNP.BackColor = System.Drawing.Color.Transparent;
+            this.labelCNP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCNP.ForeColor = System.Drawing.Color.White;
+            this.labelCNP.Location = new System.Drawing.Point(203, 271);
             this.labelCNP.Name = "labelCNP";
-            this.labelCNP.Size = new System.Drawing.Size(66, 31);
+            this.labelCNP.Size = new System.Drawing.Size(36, 16);
             this.labelCNP.TabIndex = 46;
             this.labelCNP.Text = "CNP";
             // 
             // textBoxLastName
             // 
             this.textBoxLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxLastName.Location = new System.Drawing.Point(384, 167);
+            this.textBoxLastName.BackColor = System.Drawing.Color.White;
+            this.textBoxLastName.Location = new System.Drawing.Point(206, 206);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(187, 20);
             this.textBoxLastName.TabIndex = 47;
@@ -109,7 +123,8 @@
             // textBoxFirstName
             // 
             this.textBoxFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxFirstName.Location = new System.Drawing.Point(384, 199);
+            this.textBoxFirstName.BackColor = System.Drawing.Color.White;
+            this.textBoxFirstName.Location = new System.Drawing.Point(206, 248);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(187, 20);
             this.textBoxFirstName.TabIndex = 48;
@@ -117,7 +132,8 @@
             // textBoxCNP
             // 
             this.textBoxCNP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxCNP.Location = new System.Drawing.Point(384, 230);
+            this.textBoxCNP.BackColor = System.Drawing.Color.White;
+            this.textBoxCNP.Location = new System.Drawing.Point(206, 290);
             this.textBoxCNP.Name = "textBoxCNP";
             this.textBoxCNP.Size = new System.Drawing.Size(187, 20);
             this.textBoxCNP.TabIndex = 49;
@@ -125,7 +141,7 @@
             // dateTimePickerBegin
             // 
             this.dateTimePickerBegin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerBegin.Location = new System.Drawing.Point(384, 261);
+            this.dateTimePickerBegin.Location = new System.Drawing.Point(206, 332);
             this.dateTimePickerBegin.Name = "dateTimePickerBegin";
             this.dateTimePickerBegin.Size = new System.Drawing.Size(187, 20);
             this.dateTimePickerBegin.TabIndex = 50;
@@ -133,7 +149,7 @@
             // dateTimePickerFinal
             // 
             this.dateTimePickerFinal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerFinal.Location = new System.Drawing.Point(384, 292);
+            this.dateTimePickerFinal.Location = new System.Drawing.Point(206, 374);
             this.dateTimePickerFinal.Name = "dateTimePickerFinal";
             this.dateTimePickerFinal.Size = new System.Drawing.Size(187, 20);
             this.dateTimePickerFinal.TabIndex = 51;
@@ -141,33 +157,51 @@
             // buttonRent
             // 
             this.buttonRent.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonRent.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonRent.Location = new System.Drawing.Point(384, 358);
+            this.buttonRent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(88)))));
+            this.buttonRent.FlatAppearance.BorderSize = 0;
+            this.buttonRent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRent.Location = new System.Drawing.Point(264, 400);
             this.buttonRent.Name = "buttonRent";
-            this.buttonRent.Size = new System.Drawing.Size(113, 31);
+            this.buttonRent.Size = new System.Drawing.Size(75, 21);
             this.buttonRent.TabIndex = 52;
-            this.buttonRent.Text = "Rent";
+            this.buttonRent.Text = "RENT";
             this.buttonRent.UseVisualStyleBackColor = false;
             this.buttonRent.Click += new System.EventHandler(this.buttonRent_Click);
             // 
             // buttonBack
             // 
             this.buttonBack.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonBack.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonBack.Location = new System.Drawing.Point(220, 358);
+            this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(88)))));
+            this.buttonBack.FlatAppearance.BorderSize = 0;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBack.Location = new System.Drawing.Point(525, 12);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(113, 31);
+            this.buttonBack.Size = new System.Drawing.Size(75, 21);
             this.buttonBack.TabIndex = 53;
-            this.buttonBack.Text = "Back";
+            this.buttonBack.Text = "BACK";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(189, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(225, 116);
+            this.pictureBox1.TabIndex = 54;
+            this.pictureBox1.TabStop = false;
             // 
             // FormRentCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.BackColor = System.Drawing.SystemColors.Desktop;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(612, 522);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonRent);
             this.Controls.Add(this.dateTimePickerFinal);
@@ -182,6 +216,7 @@
             this.Controls.Add(this.labelLastName);
             this.Name = "FormRentCar";
             this.Text = "FormRentCar";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +236,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerFinal;
         private System.Windows.Forms.Button buttonRent;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

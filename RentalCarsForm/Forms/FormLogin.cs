@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace RentalCarsForm.Forms
         public FormLogin(MainForm mainForm)
         {
             InitializeComponent();
+            this.Paint += new PaintEventHandler(set_background);
             this.mainForm = mainForm;
             textBoxPassword.PasswordChar = '*';
         }
@@ -56,6 +58,21 @@ namespace RentalCarsForm.Forms
                 return false;
             }
             return true;
+        }
+
+        private void set_background(Object sender, PaintEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+
+            //the rectangle, the same size as our Form
+            Rectangle gradient_rectangle = new Rectangle(0, 0, Width, Height);
+
+            //define gradient's properties
+            //Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(0, 0, 0), Color.FromArgb(57, 128, 227), 65f);
+            Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(15, 0, 0), Color.FromArgb(70, 0, 0), 65f);
+
+            //apply gradient         
+            graphics.FillRectangle(b, gradient_rectangle);
         }
     }
 }

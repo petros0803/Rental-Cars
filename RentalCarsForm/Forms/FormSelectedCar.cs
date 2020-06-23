@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -22,6 +23,7 @@ namespace RentalCarsForm.Forms
         public FormSelectedCar(MainForm mainForm, string carID, string username)
         {
             InitializeComponent();
+            this.Paint += new PaintEventHandler(set_background);
             this.mainForm = mainForm;
             this.username = username;
             this.carID = carID;
@@ -45,14 +47,15 @@ namespace RentalCarsForm.Forms
                 labelRented.Text = "Da";
                 labelRentedDate.Visible = true;
                 labelRentedUntil.Text = Convert.ToString(person.ToDate);
-                buttonRent.Text = "Free";
+                buttonRent.Text = "FREE";
             }
             else
             {
-                labelRented.Text = "Nu";
-                labelRentedUntil.Visible = false;
-                labelRentedDate.Visible = false;
-                buttonRent.Text = "Rent";
+                labelRented.Text = "Nu este inchiriat";
+                labelRentedUntil.Visible = true;
+                //labelRentedDate.Visible = false;
+                labelRentedUntil.Text = "Nu este inchiriat";
+                buttonRent.Text = "RENT";
             }
         }
 
@@ -64,7 +67,6 @@ namespace RentalCarsForm.Forms
         private void LabelUsernameOnOpen(string username)
         {
             labelUsername.Text = username;
-            labelUsername.ForeColor = Color.BlueViolet;
         }
 
         private void ButtonBack_Click(object sender, EventArgs e)
@@ -84,6 +86,20 @@ namespace RentalCarsForm.Forms
             {
                 this.mainForm.OpenChildForm(new FormRentCar(mainForm, carID, username));
             }
+        }
+        private void set_background(Object sender, PaintEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+
+            //the rectangle, the same size as our Form
+            Rectangle gradient_rectangle = new Rectangle(0, 0, Width, Height);
+
+            //define gradient's properties
+            //Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(0, 0, 0), Color.FromArgb(57, 128, 227), 65f);
+            Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(15, 0, 0), Color.FromArgb(70, 0, 0), 65f);
+
+            //apply gradient         
+            graphics.FillRectangle(b, gradient_rectangle);
         }
     }
 }

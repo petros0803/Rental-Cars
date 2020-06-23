@@ -17,7 +17,6 @@ namespace RentalCarsDB
         public RentalCarsContext() : base("name=RentalCarsContext")
         {
             Database.CreateIfNotExists();
-
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

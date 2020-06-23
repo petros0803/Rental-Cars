@@ -34,6 +34,23 @@ namespace RentalCarsDB
             }
         }
 
+        public static async Task SavePersonAsync(Person person)
+        {
+            using (var context = new RentalCarsContext())
+            {
+                context.People.Add(person);
+                await context.SaveChangesAsync();
+            }
+        }
+
+        public static async Task<bool> PersonAlreadyExist(Person person)
+        {
+            using (var context = new RentalCarsContext())
+            {
+                return await context.People.Where(p => p.PersonId == person.PersonId).FirstOrDefaultAsync() != null;
+            }
+        }
+
         public static async Task<List<Car>> GetCarsAsync()
         {
             using (var context = new RentalCarsContext())
@@ -59,6 +76,7 @@ namespace RentalCarsDB
                 {
                     result.Person = person;
                     result.Rented = true;
+                    
                     await context.SaveChangesAsync();
                 }
             }
@@ -69,12 +87,14 @@ namespace RentalCarsDB
             using (var context = new RentalCarsContext())
             {
                 var result = context.Cars.Where(c => c.CarId == carId).FirstOrDefault();
-                var person = context.People.Where(p => p.PersonId == carId).FirstOrDefault();
+                var personResult = context.People.Where(p => p.Car.CarId == carId).FirstOrDefault();
+
                 if (result != null)
                 {
                     result.Person = null;
                     result.Rented = false;
-                    context.People.Remove(person);
+                    //context.People.Remove(result.Person);
+                    personResult.Car = null;
                     await context.SaveChangesAsync();
                 }
             }
@@ -84,8 +104,8 @@ namespace RentalCarsDB
         {
             using (var context = new RentalCarsContext())
             {
-                var car = await context.Cars.Where(c => c.CarId == carId).FirstOrDefaultAsync();
-                return await context.People.Where(p => p.PersonId == carId).FirstOrDefaultAsync();
+                //var car = await context.Cars.Where(c => c.CarId == carId).FirstOrDefaultAsync();
+                return await context.People.Where(p => p.Car.CarId == carId).FirstOrDefaultAsync();
             }
         }
 
@@ -96,7 +116,6 @@ namespace RentalCarsDB
                 return await context.Cars.Where(c => c.CarId == carId).FirstOrDefaultAsync();
             }
         }
-
         public static async Task<bool> LogInAsync(User user)
         {
             using (var context = new RentalCarsContext())

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,7 @@ namespace RentalCarsForm.Forms
         public FormRentCar(MainForm mainForm, string carID, string username)
         {
             InitializeComponent();
+            this.Paint += new PaintEventHandler(set_background);
             this.mainForm = mainForm;
             this.username = username;
             this.carID = carID;
@@ -37,10 +39,10 @@ namespace RentalCarsForm.Forms
             if (verifyData())
             {
                 setLabels();
-                await RentalCarsAPI.RentToPersonAsync(Guid.Parse(carID),
-                    Person.Create(textBoxCNP.Text, textBoxFirstName.Text, dateTimePickerBegin.Value,
-                    dateTimePickerFinal.Value, textBoxLastName.Text));
-                //last
+
+                await RentalCarsAPI.RentToPersonAsync(Guid.Parse(carID), Person.Create(textBoxCNP.Text, textBoxFirstName.Text, 
+                    dateTimePickerBegin.Value, dateTimePickerFinal.Value, textBoxLastName.Text));
+                
                 this.mainForm.OpenChildForm(new FormSelectedCar(mainForm, carID, username));
             }
 
@@ -104,6 +106,20 @@ namespace RentalCarsForm.Forms
                 labelFinal.ForeColor = Color.Black;
             }
             return ok;
+        }
+        private void set_background(Object sender, PaintEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+
+            //the rectangle, the same size as our Form
+            Rectangle gradient_rectangle = new Rectangle(0, 0, Width, Height);
+
+            //define gradient's properties
+            //Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(0, 0, 0), Color.FromArgb(57, 128, 227), 65f);
+            Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(15, 0, 0), Color.FromArgb(70, 0, 0), 65f);
+
+            //apply gradient         
+            graphics.FillRectangle(b, gradient_rectangle);
         }
     }
 }

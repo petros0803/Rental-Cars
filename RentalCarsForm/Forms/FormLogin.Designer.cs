@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
@@ -36,15 +37,20 @@
             this.labelRentalCars = new System.Windows.Forms.Label();
             this.labelLogIn = new System.Windows.Forms.Label();
             this.labelFailLogIn = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(98, 221);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(98, 216);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(68, 16);
             this.label2.TabIndex = 19;
             this.label2.Text = "Password";
             // 
@@ -52,16 +58,22 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(98, 182);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(98, 177);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(71, 16);
             this.label1.TabIndex = 18;
             this.label1.Text = "Username";
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxPassword.Location = new System.Drawing.Point(101, 237);
+            this.textBoxPassword.BackColor = System.Drawing.Color.Black;
+            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(88)))));
+            this.textBoxPassword.Location = new System.Drawing.Point(101, 233);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(157, 20);
             this.textBoxPassword.TabIndex = 17;
@@ -69,7 +81,10 @@
             // textBoxUsername
             // 
             this.textBoxUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxUsername.Location = new System.Drawing.Point(101, 198);
+            this.textBoxUsername.BackColor = System.Drawing.Color.Black;
+            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(88)))));
+            this.textBoxUsername.Location = new System.Drawing.Point(101, 194);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(157, 20);
             this.textBoxUsername.TabIndex = 16;
@@ -77,12 +92,15 @@
             // buttonLogin
             // 
             this.buttonLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonLogin.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonLogin.Location = new System.Drawing.Point(145, 263);
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(88)))));
+            this.buttonLogin.Cursor = System.Windows.Forms.Cursors.Default;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonLogin.ForeColor = System.Drawing.Color.Black;
+            this.buttonLogin.Location = new System.Drawing.Point(145, 269);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(75, 23);
+            this.buttonLogin.Size = new System.Drawing.Size(75, 21);
             this.buttonLogin.TabIndex = 15;
-            this.buttonLogin.Text = "Log in";
+            this.buttonLogin.Text = "LOG IN";
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.ButtonLogin_ClickAsync);
             // 
@@ -90,23 +108,29 @@
             // 
             this.labelRentalCars.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelRentalCars.AutoSize = true;
+            this.labelRentalCars.BackColor = System.Drawing.Color.Transparent;
             this.labelRentalCars.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRentalCars.Location = new System.Drawing.Point(65, 56);
+            this.labelRentalCars.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.labelRentalCars.Location = new System.Drawing.Point(65, 70);
             this.labelRentalCars.Name = "labelRentalCars";
             this.labelRentalCars.Size = new System.Drawing.Size(248, 31);
             this.labelRentalCars.TabIndex = 20;
             this.labelRentalCars.Text = "Rental cars employee";
+            this.labelRentalCars.Visible = false;
             // 
             // labelLogIn
             // 
             this.labelLogIn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelLogIn.AutoSize = true;
+            this.labelLogIn.BackColor = System.Drawing.Color.Transparent;
             this.labelLogIn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLogIn.Location = new System.Drawing.Point(139, 87);
+            this.labelLogIn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.labelLogIn.Location = new System.Drawing.Point(139, 101);
             this.labelLogIn.Name = "labelLogIn";
             this.labelLogIn.Size = new System.Drawing.Size(84, 31);
             this.labelLogIn.TabIndex = 21;
             this.labelLogIn.Text = "Log in";
+            this.labelLogIn.Visible = false;
             // 
             // labelFailLogIn
             // 
@@ -117,11 +141,25 @@
             this.labelFailLogIn.Size = new System.Drawing.Size(0, 13);
             this.labelFailLogIn.TabIndex = 22;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(71, 39);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(225, 116);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(384, 361);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelFailLogIn);
             this.Controls.Add(this.labelLogIn);
             this.Controls.Add(this.labelRentalCars);
@@ -130,8 +168,10 @@
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.buttonLogin);
+            this.MaximizeBox = false;
             this.Name = "FormLogin";
-            this.Text = "FormLogin";
+            this.Text = "Rental Cars log in";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +187,6 @@
         private System.Windows.Forms.Label labelRentalCars;
         private System.Windows.Forms.Label labelLogIn;
         private System.Windows.Forms.Label labelFailLogIn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
