@@ -34,8 +34,6 @@
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
-            this.labelRentalCars = new System.Windows.Forms.Label();
-            this.labelLogIn = new System.Windows.Forms.Label();
             this.labelFailLogIn = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,37 +98,9 @@
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 21);
             this.buttonLogin.TabIndex = 15;
-            this.buttonLogin.Text = "LOG IN";
+            this.buttonLogin.Text = "Log in";
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.ButtonLogin_ClickAsync);
-            // 
-            // labelRentalCars
-            // 
-            this.labelRentalCars.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelRentalCars.AutoSize = true;
-            this.labelRentalCars.BackColor = System.Drawing.Color.Transparent;
-            this.labelRentalCars.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRentalCars.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelRentalCars.Location = new System.Drawing.Point(65, 70);
-            this.labelRentalCars.Name = "labelRentalCars";
-            this.labelRentalCars.Size = new System.Drawing.Size(248, 31);
-            this.labelRentalCars.TabIndex = 20;
-            this.labelRentalCars.Text = "Rental cars employee";
-            this.labelRentalCars.Visible = false;
-            // 
-            // labelLogIn
-            // 
-            this.labelLogIn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelLogIn.AutoSize = true;
-            this.labelLogIn.BackColor = System.Drawing.Color.Transparent;
-            this.labelLogIn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLogIn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.labelLogIn.Location = new System.Drawing.Point(139, 101);
-            this.labelLogIn.Name = "labelLogIn";
-            this.labelLogIn.Size = new System.Drawing.Size(84, 31);
-            this.labelLogIn.TabIndex = 21;
-            this.labelLogIn.Text = "Log in";
-            this.labelLogIn.Visible = false;
             // 
             // labelFailLogIn
             // 
@@ -147,7 +117,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(71, 33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(225, 116);
             this.pictureBox1.TabIndex = 23;
@@ -155,19 +125,19 @@
             // 
             // FormLogin
             // 
+            this.AcceptButton = this.buttonLogin;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(384, 361);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelFailLogIn);
-            this.Controls.Add(this.labelLogIn);
-            this.Controls.Add(this.labelRentalCars);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.buttonLogin);
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "FormLogin";
             this.Text = "Rental Cars log in";
@@ -184,8 +154,6 @@
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.Button buttonLogin;
-        private System.Windows.Forms.Label labelRentalCars;
-        private System.Windows.Forms.Label labelLogIn;
         private System.Windows.Forms.Label labelFailLogIn;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

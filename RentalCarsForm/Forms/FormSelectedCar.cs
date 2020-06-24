@@ -48,6 +48,7 @@ namespace RentalCarsForm.Forms
                 labelRentedDate.Visible = true;
                 labelRentedUntil.Text = Convert.ToString(person.ToDate);
                 buttonRent.Text = "FREE";
+                buttonSeePerson.Visible = true;
             }
             else
             {
@@ -56,6 +57,7 @@ namespace RentalCarsForm.Forms
                 //labelRentedDate.Visible = false;
                 labelRentedUntil.Text = "Nu este inchiriat";
                 buttonRent.Text = "RENT";
+                buttonSeePerson.Visible = false;
             }
         }
 
@@ -100,6 +102,11 @@ namespace RentalCarsForm.Forms
 
             //apply gradient         
             graphics.FillRectangle(b, gradient_rectangle);
+        }
+
+        private void buttonSeePerson_Click(object sender, EventArgs e)
+        {
+            this.mainForm.OpenChildForm(new FormPerson(mainForm, 1, username, carID));
         }
     }
 }

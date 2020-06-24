@@ -20,3 +20,5 @@ C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\bin\Debug\EntityFramew
 C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\obj\Debug\RentalCarsForm.Forms.FormSelectedCar.resources
 C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\obj\Debug\RentalCarsForm.Forms.FormRentCar.resources
+C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\obj\Debug\RentalCarsForm.Forms.FormHistory.resources
+C:\Users\Bobo\Documents\GitHub\Rental-Cars\RentalCarsForm\obj\Debug\RentalCarsForm.Forms.FormPerson.resources

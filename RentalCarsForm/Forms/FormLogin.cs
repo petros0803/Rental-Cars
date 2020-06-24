@@ -69,7 +69,7 @@ namespace RentalCarsForm.Forms
 
             //define gradient's properties
             //Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(0, 0, 0), Color.FromArgb(57, 128, 227), 65f);
-            Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(15, 0, 0), Color.FromArgb(70, 0, 0), 65f);
+            Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(15, 0, 0), Color.FromArgb(40, 0, 0), 65f);
 
             //apply gradient         
             graphics.FillRectangle(b, gradient_rectangle);

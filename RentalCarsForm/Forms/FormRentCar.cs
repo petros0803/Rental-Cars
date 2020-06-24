@@ -50,11 +50,11 @@ namespace RentalCarsForm.Forms
 
         private void setLabels()
         {
-            labelBegin.ForeColor = Color.Black;
-            labelFinal.ForeColor = Color.Black;
-            labelFirstName.ForeColor = Color.Black;
-            labelLastName.ForeColor = Color.Black;
-            labelCNP.ForeColor = Color.Black;
+            labelBegin.ForeColor = Color.White;
+            labelFinal.ForeColor = Color.White;
+            labelFirstName.ForeColor = Color.White;
+            labelLastName.ForeColor = Color.White;
+            labelCNP.ForeColor = Color.White;
         }
 
         private bool verifyData()
@@ -67,7 +67,7 @@ namespace RentalCarsForm.Forms
             }
             else
             {
-                labelFirstName.ForeColor = Color.Black;
+                labelFirstName.ForeColor = Color.White;
             }
             if (textBoxLastName.Text.Length < 3)
             {
@@ -76,34 +76,39 @@ namespace RentalCarsForm.Forms
             }
             else
             {
-                labelLastName.ForeColor = Color.Black;
+                labelLastName.ForeColor = Color.White;
             }
             if (textBoxCNP.Text.Length != 13)
             {
-                ok= false;
+                ok = false;
                 labelCNP.ForeColor = Color.Red;
             }
             else
             {
-                labelCNP.ForeColor = Color.Black;
+                labelCNP.ForeColor = Color.White;
             }       
             if (dateTimePickerBegin.Value < DateTime.Now)
             {
-                ok= false;
+                ok = false;
                 labelBegin.ForeColor = Color.Red;
             }
             else
             {
-                labelBegin.ForeColor = Color.Black;
+                labelBegin.ForeColor = Color.White;
             }
             if (dateTimePickerFinal.Value < dateTimePickerBegin.Value)
             {
                 labelFinal.ForeColor = Color.Red;
-                ok= false;
+                ok = false;
             }
             else
             {
-                labelFinal.ForeColor = Color.Black;
+                labelFinal.ForeColor = Color.White;
+            }
+            if(RentalCarsAPI.CheckPersonByCNP(textBoxCNP.Text))
+            {
+                labelCNPError.Text = "Cineva care detine acest CNP figureaza in baza de date cu o masina inchiriata deja";
+                ok = false;
             }
             return ok;
         }

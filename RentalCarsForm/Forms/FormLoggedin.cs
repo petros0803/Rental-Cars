@@ -139,5 +139,10 @@ namespace RentalCarsForm.Forms
             dataGridView.AllowUserToResizeRows = false;
 
         }
+
+        private void buttonHistory_Click(object sender, EventArgs e)
+        {
+            this.mainForm.OpenChildForm(new FormHistory(mainForm, username));
+        }
     }
 }

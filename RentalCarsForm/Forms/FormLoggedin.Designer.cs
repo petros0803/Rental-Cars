@@ -30,14 +30,15 @@ namespace RentalCarsForm.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.comboBoxCarModel = new System.Windows.Forms.ComboBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.labelRentalCars = new System.Windows.Forms.Label();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.labelUsername = new System.Windows.Forms.Label();
+            this.buttonHistory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,14 +60,14 @@ namespace RentalCarsForm.Forms
             this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.EnableHeadersVisualStyles = false;
             this.dataGridView.GridColor = System.Drawing.Color.White;
@@ -75,8 +76,8 @@ namespace RentalCarsForm.Forms
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dataGridView.Size = new System.Drawing.Size(610, 450);
             this.dataGridView.TabIndex = 0;
@@ -134,6 +135,20 @@ namespace RentalCarsForm.Forms
             this.labelUsername.Size = new System.Drawing.Size(0, 31);
             this.labelUsername.TabIndex = 24;
             // 
+            // buttonHistory
+            // 
+            this.buttonHistory.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(88)))));
+            this.buttonHistory.FlatAppearance.BorderSize = 0;
+            this.buttonHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHistory.Location = new System.Drawing.Point(463, 12);
+            this.buttonHistory.Name = "buttonHistory";
+            this.buttonHistory.Size = new System.Drawing.Size(75, 21);
+            this.buttonHistory.TabIndex = 25;
+            this.buttonHistory.Text = "History";
+            this.buttonHistory.UseVisualStyleBackColor = false;
+            this.buttonHistory.Click += new System.EventHandler(this.buttonHistory_Click);
+            // 
             // FormLoggedin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +156,7 @@ namespace RentalCarsForm.Forms
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(628, 561);
+            this.Controls.Add(this.buttonHistory);
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.buttonLogOut);
@@ -163,5 +179,6 @@ namespace RentalCarsForm.Forms
         private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.Label labelUsername;
+        private System.Windows.Forms.Button buttonHistory;
     }
 }

@@ -76,9 +76,42 @@ namespace RentalCarsDB
                 {
                     result.Person = person;
                     result.Rented = true;
-                    
-                    await context.SaveChangesAsync();
                 }
+                var historyResult = context.Histories.Where(h => h.CNP == person.CNP).FirstOrDefault();
+                if (historyResult == null)
+                {
+                    History h = History.Create(person.FirstName, person.LastName, person.CNP,
+                        person.FromDate, person.ToDate);
+                    context.Histories.Add(h);
+                }
+                else
+                {
+                    historyResult.Counter += 1;
+                    historyResult.FromDate = person.FromDate;
+                    historyResult.ToDate = person.ToDate;
+                }
+                await context.SaveChangesAsync();
+            }
+        }
+
+        public static bool CheckPersonByCNP(string cnp)
+        {
+            using (var context = new RentalCarsContext())
+            {
+                var result = context.People.Where(p => p.CNP == cnp).FirstOrDefault();
+                if (result == null)
+                {
+                    return false;
+                }
+                return true;
+            }
+        }
+
+        public static async Task<List<History>> GetHistoryAsync()
+        {
+            using (var context = new RentalCarsContext())
+            {
+                return await context.Histories.ToListAsync();
             }
         }
 
@@ -104,11 +137,30 @@ namespace RentalCarsDB
         {
             using (var context = new RentalCarsContext())
             {
-                //var car = await context.Cars.Where(c => c.CarId == carId).FirstOrDefaultAsync();
                 return await context.People.Where(p => p.Car.CarId == carId).FirstOrDefaultAsync();
             }
         }
-
+        public static async Task<History> GetHistoryByCNP(string CNP)
+        {
+            using (var context = new RentalCarsContext())
+            {
+                return await context.Histories.Where(h => h.CNP == CNP).FirstOrDefaultAsync();
+            }
+        }
+        public static async Task<Person> GetPersonByCNP(string CNP)
+        {
+            using (var context = new RentalCarsContext())
+            {
+                return await context.People.Where(p => p.CNP == CNP).FirstOrDefaultAsync();
+            }
+        }
+        public static async Task<Car> GetCarByCNP(string CNP)
+        {
+            using (var context = new RentalCarsContext())
+            {
+                return await context.Cars.Where(c => c.Person.CNP == CNP).FirstOrDefaultAsync();
+            }
+        }
         public static async Task<Car> GetCarById(Guid carId)
         {
             using (var context = new RentalCarsContext())

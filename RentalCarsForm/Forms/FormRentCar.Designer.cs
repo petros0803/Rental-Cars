@@ -42,6 +42,7 @@
             this.buttonRent = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelCNPError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,6 +195,16 @@
             this.pictureBox1.TabIndex = 54;
             this.pictureBox1.TabStop = false;
             // 
+            // labelCNPError
+            // 
+            this.labelCNPError.AutoSize = true;
+            this.labelCNPError.BackColor = System.Drawing.Color.Transparent;
+            this.labelCNPError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(88)))));
+            this.labelCNPError.Location = new System.Drawing.Point(145, 447);
+            this.labelCNPError.Name = "labelCNPError";
+            this.labelCNPError.Size = new System.Drawing.Size(0, 13);
+            this.labelCNPError.TabIndex = 55;
+            // 
             // FormRentCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,6 +212,7 @@
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(612, 522);
+            this.Controls.Add(this.labelCNPError);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonRent);
@@ -237,5 +249,6 @@
         private System.Windows.Forms.Button buttonRent;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelCNPError;
     }
 }

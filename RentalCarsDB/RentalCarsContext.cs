@@ -13,6 +13,8 @@ namespace RentalCarsDB
         public DbSet<Car> Cars { get; set; }
         public DbSet<Person> People { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<History> Histories { get; set; }
+
 
         public RentalCarsContext() : base("name=RentalCarsContext")
         {

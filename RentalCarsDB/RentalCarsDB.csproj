@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Enums\FuelType.cs" />
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\History.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="RentalCarsAPI.cs" />

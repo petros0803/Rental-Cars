@@ -60,6 +60,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.buttonSeePerson = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelModel
@@ -441,6 +442,19 @@
             this.label10.Size = new System.Drawing.Size(1, 346);
             this.label10.TabIndex = 58;
             // 
+            // buttonSeePerson
+            // 
+            this.buttonSeePerson.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonSeePerson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(88)))));
+            this.buttonSeePerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSeePerson.Location = new System.Drawing.Point(265, 489);
+            this.buttonSeePerson.Name = "buttonSeePerson";
+            this.buttonSeePerson.Size = new System.Drawing.Size(75, 21);
+            this.buttonSeePerson.TabIndex = 59;
+            this.buttonSeePerson.Text = "See Person";
+            this.buttonSeePerson.UseVisualStyleBackColor = false;
+            this.buttonSeePerson.Click += new System.EventHandler(this.buttonSeePerson_Click);
+            // 
             // FormSelectedCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -448,6 +462,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(612, 522);
+            this.Controls.Add(this.buttonSeePerson);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -521,5 +536,6 @@
         public System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button buttonSeePerson;
     }
 }
